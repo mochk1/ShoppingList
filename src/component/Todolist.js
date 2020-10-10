@@ -12,7 +12,7 @@ const Todolist = (props) => {
     const [todos,setTodos] = useState([])
     
 useEffect(() => {
-  axios.get('/')
+  axios.get('http://localhost:4000/')
   .then(res=>setTodos(res.data))
 }, [])
 
@@ -21,7 +21,7 @@ useEffect(() => {
 
     if(value !== ''){
       
-       axios.post('/addtodo',{todo:value, time:Date.now()})
+       axios.post('http://localhost:4000/addtodo',{todo:value, time:Date.now()})
       .then(res=>setTodos(res.data))
       console.log(todos)
      
@@ -34,7 +34,7 @@ useEffect(() => {
     
     const deleteitem = (id) => {
 /*     setTodos(todos.filter((element)=>(element !== item))) */
-axios.post('/deletetodo',{todoid:id})
+axios.post('http://localhost:4000/deletetodo',{todoid:id})
 .then(res=>setTodos(res.data))
     }
 
