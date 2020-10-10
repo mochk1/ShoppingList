@@ -1,0 +1,43 @@
+.todoitem {
+  display: flex;
+  padding: 2px;
+  border-radius: 5%;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.todos-container {
+  border: solid 1px rgb(3, 3, 70);
+  height: fit-content;
+  margin: 10px;
+  padding: 20px;
+}
+
+h2 {
+  flex: 1;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color:black;
+}
+
+.delete {
+  justify-items: center;
+  align-content: flex-start;
+  margin: 10px;
+  border:none;
+  color: red;
+}
+
+.textinput{
+border:none;
+padding: 10px;
+width:80%;
+font-size: 1rem;
+}
+
+.textinput:focus{
+
+outline:none;
+
+}

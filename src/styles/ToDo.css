@@ -1,0 +1,47 @@
+.main-div-todo {
+  -webkit-animation: fadein 0.5s;
+  display: flex;
+  justify-content: center;
+}
+
+#todos-main {
+  display: flex;
+  flex-direction: column;
+}
+
+#input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#notes {
+  display: flex;
+  width: 100vw;
+  border-radius: 2%;
+  justify-content: center;
+}
+
+#todos-main h1 {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: black;
+}
+
+
+.btn{
+max-width: 15%;
+border:none;
+background-color: white;
+width:100%;
+margin-right: 15px ;
+}
+
+.btn:hover{
+
+border: 1px solid rgba(12, 149, 24, 0.521);
+
+}
