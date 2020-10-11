@@ -12,20 +12,20 @@ const Todolist = (props) => {
     const [todos,setTodos] = useState([])
     
 useEffect(() => {
-  axios.get('/')
+  axios.get('/api')
   .then(res=>setTodos(res.data))
 }, [])
 
 
     const addvalue = async(e) => {
 
-    if(value !== ''){
+      if(value !== ''){
       
-       axios.post('/addtodo',{todo:value, time:Date.now()})
-      .then(res=>setTodos(res.data))
-
-     
- setValue('');
+        axios.post('/addtodo',{todo:value, time:Date.now()})
+       .then(res=>setTodos(res.data))
+       console.log(todos)
+      
+  setValue('');
  
 }
         else alert('Field Cannot Be Empty')

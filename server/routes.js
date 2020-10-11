@@ -16,11 +16,11 @@ db.loadDatabase(function (error) {
 
  /* GET ALL  */
       
-router.get('/', (req, res) => {
+router.get('/api', (req, res) => {
 
    db.find({}).sort({ time: -1 }).exec(function (err, data) {
     res.json(data)
- console.log('server done!')
+ console.log(data)
  });
 })
 
@@ -43,7 +43,7 @@ router.get('/', (req, res) => {
  /* DELETE  */
 
  router.post('/deletetodo', (req, res) => {
-     
+
  db.remove({ _id: req.body.todoid }, {}, function (err, data) {
     console.log(req.body.todoid)
 });
