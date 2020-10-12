@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const router = express.Router();
 const Datastore = require('nedb');
-const db = new Datastore({ filename: 'List.db' });
+const db = new Datastore({ filename: 'List.db',autoload:true });
 
 
   /* LOAD DB */
