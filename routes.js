@@ -1,11 +1,11 @@
 const express = require('express')
 const app = express()
 const router = express.Router();
-require('./connect')
+const mongoose  = require('mongoose');
 const Items = require('./Item')
+require('./connect')
 /* const Datastore = require('nedb');
 const db = new Datastore({ filename: 'List.db'}); */
-
 
 
 /*---------------------------- MONGO ATLAS -------------------------------- */

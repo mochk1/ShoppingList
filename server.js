@@ -6,7 +6,7 @@ const routes = require('./routes.js')
 const cors = require('cors');
 const bodyParser = require('body-parser')
 const path = require('path')
-
+const mongoose  = require('mongoose');
 
 
 app.use(bodyParser.urlencoded({ extended: false }))
