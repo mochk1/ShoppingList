@@ -1,6 +1,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
-const uri = process.env.MONGO_URI;
+const uri = "mongodb+srv://MainUser:dbatlasmainuser321@cluster0.m9wv8.mongodb.net/ShoppingList?retryWrites=true&w=majority";
   
 const Item = require('./Item')
 
