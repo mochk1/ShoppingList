@@ -26,10 +26,9 @@ router.get('/api', async(req, res) => {
 
  router.post('/addtodo',  async(req, res) => {
    
-  await Items.create({ todo: req.body.todo, time:req.body.time }, function (err, newDoc) {
-  })
+ await  Items.create({ todo: req.body.todo, time:req.body.time })
 
-  await Items.find({}).sort({ time: -1 }).exec(function (err, data) {
+   Items.find({}).sort({ time: -1 }).exec(function (err, data) {
     res.json(data)
     console.log(req.body.todo)
   });
