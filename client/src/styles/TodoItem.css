@@ -1,9 +1,10 @@
 .todoitem {
   display: flex;
-  padding: 2px;
-  border-radius: 5%;
+  padding: 0px;
+  margin:0px;
+  border-radius: 5px;
   background-color: rgb(255, 255, 255);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   text-align: right;
 }
 
@@ -16,23 +17,29 @@
 
 h2 {
   flex: 1;
+  padding: 1;
+  margin: 4px;
   margin-right: 10px;
   font-size: 1.2rem;
   color:black;
+  display: flex;
+  
 }
 
 .delete {
   justify-items: center;
   align-content: flex-start;
-  margin: 10px;
+  margin: 5px;
   border:none;
-  color: red;
+  color: rgba(255, 0, 0, 0.623);
+  font-size: 1.3rem;
+  background-color: white;
 }
 
 .textinput{
 border:none;
 padding: 10px;
-width:80%;
+width:100%;
 font-size: 1rem;
 }
 
